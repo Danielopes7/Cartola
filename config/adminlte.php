@@ -244,6 +244,11 @@ return [
             'url'  => 'home',
             'icon' => 'fas fa-fw fa-users',
         ],
+        [
+            'text' => 'Times',
+            'url'  => '#',
+            'icon' => 'fas fa-fw fa-futbol',
+        ],
         
     ],
 
