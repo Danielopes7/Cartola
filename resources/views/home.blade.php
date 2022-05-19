@@ -1,45 +1,43 @@
 @extends('adminlte::page')
 
-@section('title', 'Dashboard')
+@section('title', 'Lista Jogadores')
 
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1>Jogadores</h1>
 @stop
 
 @section('content')
-      <p>Tabela com usuários para buscas simples e avançadas.</p>
-    <div class="card">
+      <p>Lista com detalhes de Cartola PRO</p>
 
+<div class="card">
 <div class="card-body">
-    <table id="example2" class="table table-hover display nowrap" width="100%">
-    <thead>
-        <tr role="row">
-            <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Time</th>
-            <th data-priority="2" class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending">Nome</th>
-            <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">Status</th>
-            <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Média</th>
-            <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending">Preço</th>
-            <th  data-priority="1" class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending">Min/ Valorizar</th>
-        </tr>
-    </thead>
-    <tbody>
-    @for ($i = 0; $i < 100; $i++)
-        
-        </tr><tr class="even">
-        <td class="dtr-control sorting_1" tabindex="0">Gecko</td>
-        <td>Firefox {{$i}}</td>
-        <td>Win 2k+ / OSX.3+</td>
-        <td>1.9</td>
-        <td>2</td>
-        <td>
-            <a href="" class="btn btn-info btn-sm">
-                                        <i class="far fa-eye"></i>
-            </a>
-            <a href="" class="btn btn-info btn-sm" style="background-color: #28a745;border-color: #28a745;">
-                                        <i class="far fa-edit"></i>
-            </a>
-        </td>
-    @endfor
+    <table id="jogadores" class="table table-hover display nowrap" width="100%">
+        <thead>
+            <tr role="row">
+                <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Time</th>
+                <th data-priority="2" class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending">Nome</th>
+                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">Status</th>
+                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Média</th>
+                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending">Preço</th>
+                <th  data-priority="1" class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending">Min/ Valorizar</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for ($i = 0; $i < 780; $i++)
+                
+                </tr><tr class="even">
+                <td class="dtr-control sorting_1" tabindex="0">Gecko</td>
+                <td>Firefox {{$i}}</td>
+                <td>Win 2k+ / OSX.3+</td>
+                <td>1.9</td>
+                <td>2</td>
+                <td>2
+                </td>
+            @endfor
+        </tbody>
+    </table>
+    </div>
+</div>
 @stop
 
 @section('css')
@@ -50,10 +48,10 @@
     <script>
     
         $(function () {
-            $('#example2').DataTable({
+            $('#jogadores').DataTable({
             "paging": true,
             "pageLength": 20,
-            "lengthChange": true,
+            "lengthChange": false,
             "searching": true,
             "ordering": true,
             "info": true,
