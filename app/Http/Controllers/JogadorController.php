@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Http;
 use App\Models\Jogador;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,8 @@ class JogadorController extends Controller
      */
     public function index()
     {
-        //
+        $response = Http::get('https://api.cartola.globo.com/atletas/mercado');
+        dd($response->json());
     }
 
     /**
