@@ -13,11 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Auth::routes();
 
-Route::Resource('jogador', 'App\Http\Controllers\JogadorController');
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/', 'JogadorController@index');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
