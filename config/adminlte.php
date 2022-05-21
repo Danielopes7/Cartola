@@ -241,7 +241,7 @@ return [
         ['header' => 'ESTATÍSTICAS'],
         [
             'text' => 'Jogadores',
-            'url'  => 'home',
+            'url'  => '/',
             'icon' => 'fas fa-fw fa-users',
         ],
         [
