@@ -1,3 +1,6 @@
+<div align="center">
+    <img src="public/imagens/cartola.png" width="80px" />
+</div>
 <h1 align="center">
   Cartola4Noobs
 </h1>
