@@ -18,8 +18,9 @@ class JogadorController extends Controller
         $response = Http::get('https://api.cartola.globo.com/atletas/mercado');
         $jogadores = $response->collect();
         // dd($jogadores["atletas"][0]["apelido"]);
+        $clubes = $jogadores["clubes"];
         $jogadores = $jogadores["atletas"];
-        return view ('jogadores.index',['jogadores' => $jogadores]);
+        return view ('jogadores.index',['jogadores' => $jogadores, 'clubes' => $clubes]);
         
     }
 

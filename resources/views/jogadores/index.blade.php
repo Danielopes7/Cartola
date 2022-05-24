@@ -36,7 +36,7 @@
             @endfor --}}
             @foreach ( $jogadores as $key => $jogador) 
                     <tr class="even">
-                        <td>{{ $jogador["clube_id"]}}</td>
+                        <td> <img src="{{ $clubes[$jogador['clube_id']]['escudos']['30x30']}}" alt="{{ $clubes[$jogador['clube_id']]['nome']}}" > {{ $clubes[$jogador['clube_id']]['nome']}}</td>
                         <td>{{ $jogador["apelido"]}}</td>
                         @if ($jogador["status_id"] == 7)
                             <td><i class="fas fa-fw fa-check "></i></td>
