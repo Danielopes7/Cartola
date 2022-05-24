@@ -249,6 +249,12 @@ return [
             'url'  => '#',
             'icon' => 'fas fa-fw fa-futbol',
         ],
+        ['header' => 'ROBÔZINHO'],
+        [
+            'text' => 'Time automático',
+            'url'  => '#',
+            'icon' => 'fas fa-fw fa-robot',
+        ],
         
     ],
 
