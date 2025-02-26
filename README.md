@@ -12,8 +12,9 @@
 
 ## :sparkles: Preview 
 
-> Computer | Mobile
-> --- | --- |
+> Computer
+> ![image](https://github.com/user-attachments/assets/c0a6ee0e-32ff-4dd6-90a4-8b2f04a2daa9)
+
 <!-- > <a href="https://imgur.com/a/br6VcAN" target=”_blank”><img src="https://i.imgur.com/iHesRD5.png" /></a>  | <a href="https://imgur.com/a/br6VcAN" target="_blank"><img src="https://i.imgur.com/AiIrHzx.png" width="280px"/></a> | -->
 ## :rocket: 5 minutes quick start
 First you need to check if you have all the requirements installed on your machine:
